@@ -6,36 +6,116 @@
     android:layout_height="match_parent"
     tools:context="com.example.study.studyapp.MainActivity">
 
-    <TextView
-        android:id="@+id/txtResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.194"
-        app:layout_constraintVertical_bias="0.248" />
 
-    <TextView
-        android:id="@+id/txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autoText="true"
-        android:ellipsize="end"
-        android:lineSpacingMultiplier="1.5"
-        android:maxLines="2"
-        android:text="サポートサイトは、http://www.wings.msn.to/ です。お問合わせは、メールaoyagi0692z@gmail.com または、電話 090-xxxx-xxxx までお願いします。"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="200dp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-64dp"
+        tools:layout_editor_absoluteY="51dp">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="244dp"
-        android:layout_height="300dp"
-        app:srcCompat="@drawable/sanninshow"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="154dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="50dp"
+
+                app:srcCompat="@drawable/top"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="154dp"
+                android:layout_above="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="32dp" />
+            <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:text="button1"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--&gt;</Button>-->
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="21dp"
+                android:layout_marginLeft="30dp"
+                android:background="?android:attr/textColorHighlight"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="casual"
+                android:onClick="onClick"
+                android:src="@drawable/start_botton"
+                android:text="@string/start"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="monospace"></Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.194"
+            app:layout_constraintVertical_bias="0.248" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.5"
+            android:maxLines="2"
+            android:text="これはいらない文章だけど、なんとなく残して位置の書き方を学びます。"
+
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="200dp"
+
+            tools:layout_editor_absoluteX="300dp"
+            tools:layout_editor_absoluteY="500dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="244dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/sanninshow"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="154dp" />
+    -->
+
+
+    <!--　　<TextView-->
+            <!--android:id="@+id/textview01_id"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+    <!--　　-->
+        <!--<EditText android:id="@+id/edittext01_id"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+    <!--　　-->
+        <!--<Button android:id="@+id/button01_id"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+        <!--/>-->
 
 </android.support.constraint.ConstraintLayout>

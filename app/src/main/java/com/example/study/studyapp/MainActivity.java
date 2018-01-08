@@ -1,5 +1,6 @@
 package com.example.study.studyapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -31,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
 //                }
 //            }
 //        );
+    }
+
+    // ボタンクリック後の画面遷移
+    public void onClick(View v) {
+        // インデントの作成
+        Intent intent = new Intent(this, ChooseActivity.class);
+
+        // 遷移先の画面を起動
+        startActivity(intent);
     }
 
 //    private void showToast(){

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">StudyApp</string>
+    <string name="start">最初はグ～</string>
     <string name="btnCurrent">現在時刻</string>
 </resources>
